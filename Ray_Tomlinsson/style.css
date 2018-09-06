@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.row .row {
+    height: unset;
+}
+
+.column.full-height {
+    height: 100%;
+}
+
+.column.full {
+    width: 100%;
+}
+
+.column.half {
+    width: 50%;
+}
+
+.background-image {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+ul {
+    font-size: 2rem;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.next {
+    position: absolute;
+    bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.next i {
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    font-size: 4rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 1.1;
+}
+
+.next i.white {
+    color: #FFFFFF;
+}
+
+.next i.white:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.next i.black {
+    color: #000000;
+}
+
+.next i.black:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.padding {
+    padding: 2rem 3rem;
+}
+
+.padding-top {
+    padding-top: 2rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
