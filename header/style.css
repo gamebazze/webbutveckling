@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #cc2b5e  0%, #753a88 100%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.header .brand a {
+    height: 40px;
+    padding: 10px;
+    display: block;
+}
+
+.header .brand img {
+    height: 40px;
+    width: auto;
+}
+
+.header .desktop-menu {
+
+}
+
+.header .desktop-menu .menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header .desktop-menu .menu .menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    
+    padding: 0.8rem 1.2rem;
+    display: block;
+}
+
+.header .toggle-mobile-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header .toggle-mobile-menu:focus {
+    border: none;
+}
+
+.header .toggle-mobile-menu .line1,
+.header .toggle-mobile-menu .line2,
+.header .toggle-mobile-menu .line3 {
+    height: 4px;
+    width: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+    .header .desktop-menu {
+        display: none;
+    }
+}
