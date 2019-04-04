@@ -52,6 +52,8 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
+    display: none;
+    position: relative;
 }
 
 .header .toggle-mobile-menu:focus {
@@ -66,10 +68,63 @@ body {
     border-radius: 4px;
     border: none;
     background-color: #ffffff;
+    transition: all ease 0.4s;
+}
+
+.header .toggle-mobile-menu.active .line1 {
+    transform: rotate(-45deg);
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.header .toggle-mobile-menu.active .line2 {
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-top: -4px;
+}
+
+.header .toggle-mobile-menu.active .line3 {
+    display: none;
+}
+
+.header .mobile-menu {
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.header .mobile-menu .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header .mobile-menu .menu .menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    
+    padding: 0.8rem 1.2rem;
+    display: block;
 }
 
 @media screen and (max-width: 768px){
     .header .desktop-menu {
         display: none;
+    }
+    .header .mobile-menu {
+        display: block;
+    }
+    .header .toggle-mobile-menu {
+        display: block;
+    }
+    .header {
+        flex-wrap: wrap;
+        height: unset;
     }
 }
