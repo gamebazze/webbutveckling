@@ -12,7 +12,6 @@ body {
     left: 0px;
     right: 0px;
     height: 60px;
-    overflow: hidden;
 }
 
 .header .brand a {
@@ -24,10 +23,6 @@ body {
 .header .brand img {
     height: 40px;
     width: auto;
-}
-
-.header .desktop-menu {
-
 }
 
 .header .desktop-menu .menu {
@@ -44,8 +39,26 @@ body {
     font-size: 18px;
     font-weight: 400;
     
-    padding: 0.8rem 1.2rem;
+    padding: 1.2rem;
     display: block;
+    cursor: pointer;
+}
+
+.header .desktop-menu .menu .menu-item a.active {
+    text-decoration: underline;
+}
+
+.header .desktop-menu .menu .has-children:hover .sub-menu {
+    display: block;
+}
+
+.header .desktop-menu .menu .has-children .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #753a88;
+    list-style: none;
+    padding-left: 0px;
+    min-width: 120px;
 }
 
 .header .toggle-mobile-menu {
@@ -111,6 +124,19 @@ body {
     
     padding: 0.8rem 1.2rem;
     display: block;
+}
+
+.header .desktop-menu .menu .menu-item a.active {
+    text-decoration: underline;
+}
+
+.header .mobile-menu .menu .has-children .sub-menu {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.header .mobile-menu .menu .has-children .sub-menu .menu-item a {
+    padding: 0.6rem 1.2rem;
 }
 
 @media screen and (max-width: 768px){
